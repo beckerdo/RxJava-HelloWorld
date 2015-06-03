@@ -1,14 +1,5 @@
-package info.danbecker.diceware;
+package info.danbecker.rx;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Random;
-import java.security.SecureRandom;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -24,10 +15,14 @@ import rx.functions.Action1;
  * RxJava-HelloWorld
  * <p>
  * Demonstrate reactive Java via simple example
+ * <p>
+ * java -jar target/rxjava...jar One Two Three
+ * <p>
+ * See some good reading at https://github.com/ReactiveX/RxJava/wiki/Additional-Reading
  * 
  * @author <a href="mailto://dan@danbecker.info>Dan Becker</a>
  */
-public class Diceware {
+public class Rx {
 	
 	// options
 	public static boolean strictMode = false; // uses dice method, not computer shortCuts
@@ -66,7 +61,7 @@ public class Diceware {
 	    // Gather command line arguments for execution
 	    if( line.hasOption( "help" ) ) {
 	    	HelpFormatter formatter = new HelpFormatter();
-	    	formatter.printHelp( "java -jar diceware.jar <options> info.danbecker.diceware.Diceware", options );
+	    	formatter.printHelp( "java -jar diceware.jar <options> info.danbecker.rx.Rx", options );
 	    	System.exit( 0 );
 	    }
 	    if( line.hasOption( "numWords" ) ) {

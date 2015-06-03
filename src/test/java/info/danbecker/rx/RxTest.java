@@ -1,4 +1,4 @@
-package info.danbecker.diceware;
+package info.danbecker.rx;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertNotNull;
 
-public class DicewareTest {
+public class RxTest {
 	@Before
     public void setup() {
 	}

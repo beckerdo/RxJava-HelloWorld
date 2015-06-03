@@ -84,7 +84,7 @@
 					<manifest>
 						<addClasspath>true</addClasspath>
 						<classpathPrefix>lib/</classpathPrefix>
-						<mainClass>info.danbecker.diceware.Diceware</mainClass>
+						<mainClass>info.danbecker.rx.Rx</mainClass>
 					</manifest>
 				</archive>
 			</configuration>
